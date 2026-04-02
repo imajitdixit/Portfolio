@@ -37,6 +37,16 @@ if (closeIcon && sideBar) {
   });
 }
 
+// Close sidebar when a link is clicked
+const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+sidebarLinks.forEach(link => {
+  link.addEventListener("click", function() {
+    sideBar.classList.remove("open-sidebar");
+    sideBar.classList.add("close-sidebar");
+  });
+});
+
+
 // ---------------- Contact Form (EmailJS) ---------------- //
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
