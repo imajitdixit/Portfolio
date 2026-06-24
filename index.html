@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ajit Tech Portfolio</title>
+  <title>Ajit Dixit | Data Analyst & Developer</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -12,16 +12,16 @@
 
 <body>
   <div class="container">
-    <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+    <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
 
     <!-- HEADER -->
-    <header data-aos="fade-down" data-aos-duration="2000">
+    <header>
       <div class="left">
         <img src="images/A.png" alt="logo">
         <h2><span style="color: #72a1dea2;">Ajit</span>Dixit</h2>
       </div>
 
-      <ul>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -32,31 +32,17 @@
       </ul>
 
       <div class="box-icons">
-        <p>
-          <a href="https://github.com/imajitdixit" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-github'></i>
-          </a>
-        </p>
-        <p>
-          <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-linkedin-square'></i>
-          </a>
-        </p>
+        <p><a href="https://github.com/imajitdixit" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a></p>
+        <p><a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a></p>
       </div>
 
-      <div class="menu-icon">
-        <i class='bx bx-menu'></i>
-      </div>
+      <div class="menu-icon"><i class='bx bx-menu'></i></div>
     </header>
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-      <div class="close-icon">
-        <i class='bx bx-x'></i>
-      </div>
-
+      <div class="close-icon"><i class='bx bx-x'></i></div>
       <ul>
-        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -65,315 +51,364 @@
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
       <div class="social-sidebar">
-        <a href="https://github.com/imajitdixit" target="_blank" rel="noopener noreferrer">
-          <i class='bx bxl-github'></i>
-        </a>
-        <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank" rel="noopener noreferrer">
-          <i class='bx bxl-linkedin-square'></i>
-        </a>
+        <a href="https://github.com/imajitdixit" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
       </div>
     </div>
 
-    <!-- BLACKHOLE -->
-    <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
-      <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
-    </div>
+    <!-- ===== HERO — compact, always visible ===== -->
+    <section class="hero" id="hero">
+      <!-- blackhole video decorative only, hidden if not loaded -->
+      <div class="blackhole-box">
+        <video autoplay loop muted playsinline src="videos/blackhole.mp4"></video>
+      </div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
-        <div class="hero-info-title">
+      <div class="hero-content">
+        <div class="hero-badge">
           <i class='bx bxl-sketch'></i>
-          <a href="https://github.com/imajitdixit/Ajit_CV/blob/main/Ajit_Intern_CV.pdf" target="_blank"
-            rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
-            Resume
-          </a>
+          <a href="https://github.com/imajitdixit/Ajit_CV/blob/main/Ajit_Intern_CV.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
         </div>
 
-        <h1 data-aos="fade-right" data-aos-duration="3000">
-          Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient">Ajit Dixit</span>
         </h1>
-        <p>I'm a developer with experience in Website and Software development. Check out my projects and skills.</p>
-        <a href="#contact"><button><i class='bx bx-send'></i> Contact Me</button></a>
+        <p class="hero-role">Data Analyst &amp; Full-Stack Developer</p>
+        <p class="hero-desc">
+          B.Tech CSE @ VIT Bhopal · Currently interning at <strong>Delhivery Ltd.</strong><br>
+          I turn data into decisions and ideas into products.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#about"><button class="btn-primary"><i class='bx bx-user'></i> About Me</button></a>
+          <a href="#contact"><button class="btn-outline"><i class='bx bx-send'></i> Contact Me</button></a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num gradient">3+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num gradient">4 Cr+</span>
+            <span class="stat-label">Savings Identified</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num gradient">10+</span>
+            <span class="stat-label">Projects & Dashboards</span>
+          </div>
+        </div>
       </div>
-      <div class="skills-video-box">
-        <video class="skills-video autoBlur" autoplay loop muted plays-inline src="videos/hero-video.mp4"></video>
-      </div>
+
       <div class="scroll-down"></div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="about-section">
-      <h1 class="section-title autoDisplay">About Me </h1>
-      <div class="about-card autoBlur">
+      <h1 class="section-title" data-aos="fade-up">About Me</h1>
+      <div class="about-card" data-aos="fade-up" data-aos-delay="100">
         <p>
           Result-driven <span class="gradient">Computer Science undergraduate</span> with hands-on
-          experience in <b>full-stack development</b>, <b>data analytics</b>, and
-          <b>software engineering</b>. Skilled at building scalable applications, solving
-          complex problems, and delivering actionable insights.
+          experience in <b>data analytics</b>, <b>business intelligence</b>, and
+          <b>full-stack development</b>. Skilled at building scalable applications, solving
+          complex problems, and delivering actionable insights that drive real business value.
         </p>
       </div>
     </section>
 
-    <!-- INFO -->
+    <!-- ===== INFO CARDS ===== -->
     <section class="info-section">
-      <h1 class="section-title autoDisplay">Hi!</h1>
+      <h1 class="section-title" data-aos="fade-up">Hi!</h1>
       <div class="info-cards">
-        <div class="card ">
+        <div class="card" data-aos="fade-up" data-aos-delay="0">
           <h1 id="hi">I'm Ajit Dixit</h1>
-          <p>With 2 years of experience, I have honed my skills in both frontend and data analytics, creating dynamic and
-            responsive websites and dashboards.</p>
+          <p>With hands-on internship experience, I blend data analytics and full-stack development to create impactful dashboards and applications.</p>
           <img src="images/grid1.png" alt="">
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h1>Tech Stack</h1>
-          <p>I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable
-            applications.</p>
+          <p>I specialize in Python, Power BI, SQL, ReactJS, and ML — building robust, data-driven products.</p>
           <img src="images/grid2.png" alt="">
         </div>
-        <div class="card">
-          <h1>I’m very flexible with time zone communications & locations</h1>
-          <p>I'm based in India, Noida and open to remote work worldwide.</p>
-          <video src="videos/glob.mp4" autoplay loop muted plays-inline></video>
-          <a href="#contact"><button><i class='bx bx-send'></i> Contact Me</button></a>
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <h1>Flexible with locations &amp; time zones</h1>
+          <p>I'm based in Noida, India and open to remote work worldwide.</p>
+          <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
+          <a href="#contact"><button>Contact Me</button></a>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <h1>My Passion for Coding</h1>
-          <p>I love solving problems and building things through code. Programming isn't just my profession—it's my
-            passion. I enjoy exploring new technologies, and enhancing my skills.</p>
+          <p>I love solving problems and building things through code. Programming isn't just my profession — it's my passion.</p>
           <img src="images/grid4.png" alt="">
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-   <section id="projects" class="my-project">
-  <h1 class="section-title autoDisplay">My Projects 👨‍💻</h1>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="my-project">
+      <h1 class="section-title" data-aos="fade-up">My Projects 👨‍💻</h1>
 
-  <!-- Project 1 -->
-  <div class="project-card">
-    <div class="project-vidbox autoBlur">
-      <video autoplay muted loop playsinline src="videos/project2.mp4"></video>
-    </div>
-    <div class="project-info fadein-left">
-      <h1>UPI <span class="gradient">Fraud Detection</span></h1>
-      <p>
-        This project implements a machine learning system to detect fraudulent transactions in
-        UPI (Unified Payments Interface) payments. The system includes data preprocessing, feature 
-        engineering, and other approaches for fraud detection.
-      </p>
-      <a href="https://github.com/imajitdixit/UPI_Fraud_Detection" target="_blank" rel="noopener noreferrer">
-        <button>
-          <i class='bx bx-link-external'></i> GitHub
-        </button>
-      </a>
-    </div>
-  </div>
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-vidbox">
+          <video autoplay muted loop playsinline src="videos/project2.mp4"></video>
+        </div>
+        <div class="project-info">
+          <h1>UPI <span class="gradient">Fraud Detection</span></h1>
+          <p>ML pipeline to detect fraudulent UPI transactions using 10,000+ data points. Achieved 92% accuracy with FastAPI real-time inference, reducing false positives by 15%.</p>
+          <a href="https://github.com/imajitdixit/UPI_Fraud_Detection" target="_blank" rel="noopener noreferrer">
+            <button><i class='bx bx-link-external'></i> GitHub</button>
+          </a>
+        </div>
+      </div>
 
-  <!-- Project 2 -->
-  <div class="project-card">
-    <div class="project-vidbox autoBlur">
-      <video autoplay muted loop playsinline src="videos/project1.mp4"></video>
-    </div>
-    <div class="project-info fadein-left">
-      <h1>NewsMania <span class="gradient">Real-Time News Platform</span></h1>
-      <p>
-        Built with ReactJS & News API for category-wise real-time updates, featuring infinite scroll, 
-        routing, and async handling.
-      </p>
-      <a href="https://github.com/imajitdixit/newsmania" target="_blank" rel="noopener noreferrer">
-        <button>
-          <i class='bx bx-link-external'></i> GitHub
-        </button>
-      </a>
-    </div>
-  </div>
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-vidbox">
+          <video autoplay muted loop playsinline src="videos/project1.mp4"></video>
+        </div>
+        <div class="project-info">
+          <h1>Meta Ads <span class="gradient">Performance Dashboard</span></h1>
+          <p>Power BI dashboard tracking 339K+ impressions and 40K+ clicks across Facebook & Instagram. Built 15+ DAX measures for CTR, CPC, ROAS and campaign ROI optimization.</p>
+          <a href="https://github.com/imajitdixit" target="_blank" rel="noopener noreferrer">
+            <button><i class='bx bx-link-external'></i> GitHub</button>
+          </a>
+        </div>
+      </div>
 
-  <div class="project-card">
-    <div class="project-vidbox autoBlur">
-      <video autoplay muted loop playsinline src="videos/project3.mp4"></video>
-    </div>
-    <div class="project-info fadein-left">
-      <h1>Coffee <span class="gradient">Sale Dashboard</span></h1>
-      <p>
-        Analyzed large coffee sales datasets to identify revenue trends and seasonal demand shifts.Visualized metrics such as top-selling products,
-         profit contribution, and regional performance.
-      </p>
-      <a href="https://github.com/imajitdixit/Coffee_sale_dashboard" target="_blank" rel="noopener noreferrer">
-        <button>
-          <i class='bx bx-link-external'></i> GitHub
-        </button>
-      </a>
-    </div>
-  </div>
-
-</section>
-
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="experience-section">
-      <h1 class="section-title autoDisplay">Experience 💼</h1>
-      <div class="experience-card autoBlur">
-        <h2>Data Analytics Intern – <span class="gradient">KL LAB</span></h2>
-        <p><i class='bx bx-calendar'></i> May – Jul 2024 | Remote</p>
-        <ul>
-          <li>Orchestrated the build and enhancement of 4+ interactive dashboards using SQL, Power BI and Excel; this accelerated
-                KPI monitoring, and trimmed monthly reporting cycles by 30% through workflow automation.</li>
-          <li> Revolutionized data workflows by implementing automated solutions for 3 critical data pipelines, increasing data
-                processing speed by 20% and positively impacting decision-making across the organization.</li>
-          <li> Governed 100K+ row datasets, upholding 99% data integrity within analytics pipelines, which consequently strengthened
-                the consistency of downstream reporting and machine learning workflows.</li>
-        </ul>
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-vidbox">
+          <video autoplay muted loop playsinline src="videos/project3.mp4"></video>
+        </div>
+        <div class="project-info">
+          <h1>Coffee <span class="gradient">Sale Dashboard</span></h1>
+          <p>Analyzed large coffee sales datasets to identify revenue trends and seasonal demand shifts. Visualized top-selling products, profit contribution, and regional performance.</p>
+          <a href="https://github.com/imajitdixit/Coffee_sale_dashboard" target="_blank" rel="noopener noreferrer">
+            <button><i class='bx bx-link-external'></i> GitHub</button>
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="education-section">
-      <h1 class="section-title autoDisplay">Education 🎓</h1>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h2>B.Tech CSE, VIT Bhopal</h2>
-          <p>2022 – Present | Coursework: DSA, DBMS, Web Dev</p>
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="experience-section">
+      <h1 class="section-title" data-aos="fade-up">Experience 💼</h1>
+
+      <div class="experience-timeline">
+
+        <div class="exp-card" data-aos="fade-up">
+          <div class="exp-header">
+            <div class="exp-title-block">
+              <span class="exp-badge current">Current</span>
+              <h2>Process Engineer Intern</h2>
+              <p class="exp-company"><span class="gradient">Delhivery Ltd.</span></p>
+            </div>
+            <div class="exp-meta">
+              <span><i class='bx bx-calendar'></i> Apr 2026 – Present</span>
+              <span><i class='bx bx-map'></i> Onsite</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Designed an Expense Management Analytics Framework uncovering allocation inefficiencies, with projected annual savings of <strong>4 Crore+</strong> via process optimization.</li>
+            <li>Built multi-level executive dashboards for Pan-India Leadership Team enabling region-wise, center-wise, and function-wise performance monitoring.</li>
+            <li>Collaborated with Operations, Finance, and Business Excellence teams to convert raw data into actionable insights supporting strategic decisions.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Power BI</span><span>Excel</span><span>DAX</span><span>Data Analytics</span><span>Dashboard Design</span>
+          </div>
         </div>
-        <div class="timeline-item">
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-header">
+            <div class="exp-title-block">
+              <h2>Founder's Office Intern</h2>
+              <p class="exp-company"><span class="gradient">Ananta Artha Realty</span></p>
+            </div>
+            <div class="exp-meta">
+              <span><i class='bx bx-calendar'></i> Feb 2026 – Apr 2026</span>
+              <span><i class='bx bx-map'></i> Onsite</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Enabled <strong>10 Cr portfolio expansion</strong> by delivering a high-quality dataset of 10,000+ records, directly supporting strategic acquisition and investment decisions.</li>
+            <li>Cleaned and analyzed raw data to generate actionable insights, improving data usability and supporting business decision-making.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>Data Collection</span><span>Python</span><span>Excel</span><span>Business Analysis</span>
+          </div>
+        </div>
+
+        <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-header">
+            <div class="exp-title-block">
+              <h2>Data Analyst Intern</h2>
+              <p class="exp-company"><span class="gradient">KL Lab</span></p>
+            </div>
+            <div class="exp-meta">
+              <span><i class='bx bx-calendar'></i> Apr 2025 – Jul 2025</span>
+              <span><i class='bx bx-map'></i> Remote</span>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built <strong>4+ interactive dashboards</strong> using SQL, Power BI and Excel; trimmed monthly reporting cycles by <strong>30%</strong> through workflow automation.</li>
+            <li>Managed <strong>100K+ row datasets</strong>, upholding 99% data integrity within analytics pipelines.</li>
+          </ul>
+          <div class="exp-tags">
+            <span>SQL</span><span>Power BI</span><span>Excel</span><span>ETL</span><span>Data Pipelines</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="education-section">
+      <h1 class="section-title" data-aos="fade-up">Education 🎓</h1>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <h2>B.Tech CSE – VIT Bhopal</h2>
+          <p>Oct 2022 – Present | Coursework: DSA, DBMS, Web Dev</p>
+        </div>
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
           <h2>Class 12 – Indus Valley Public School</h2>
           <p>91.2% | CBSE</p>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
           <h2>Class 10 – Indus Valley Public School</h2>
           <p>92.8% | CBSE</p>
         </div>
       </div>
     </section>
 
-    <!-- ACHIEVEMENTS -->
+    <!-- ===== ACHIEVEMENTS ===== -->
     <section id="achievements" class="achievements-section">
-      <h1 class="section-title autoDisplay">Achievements 🏆</h1>
+      <h1 class="section-title" data-aos="fade-up">Achievements 🏆</h1>
       <div class="achievement-cards">
-
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <img src="images/advitya.jpg" alt="AdVITya'25" class="achievement-img">
           <i class='bx bx-star gradient'></i>
           <p>Marketing lead for AdVITya'25</p>
         </div>
-
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <img src="images/ios.jpg" alt="VIT iOS Club" class="achievement-img">
           <i class='bx bx-bulb gradient'></i>
           <p>Led VIT iOS Club marketing, boosting sign-ups by 30%.</p>
         </div>
-
       </div>
     </section>
 
-
-    <!-- SKILLS -->
+    <!-- ===== SKILLS ===== -->
     <section id="skills" class="skills-section">
-      <h1 class="section-title autoDisplay">My Skills 🚀</h1>
-      <div class="skills-box autoDisplay">
-        <img class="skills-image" src="images/digital brain (2).png" alt="">
-        <div class="Designer">
-          <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
-          <p>I have expertise in HTML, CSS, JavaScript, React.JS and design tools like Figma. My strength lies in
-            blending aesthetics with functionality to create seamless user experiences.</p>
+      <h1 class="section-title" data-aos="fade-up">My Skills 🚀</h1>
+
+      <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="skill-column">
+          <h2 class="gradient"><i class='bx bx-laptop'></i> Designer</h2>
+          <p>Expertise in HTML, CSS, JavaScript, React.JS and Figma. I blend aesthetics with functionality for seamless UX.</p>
         </div>
-        <div class="coder">
-          <h1 class="gradient">Coder <i class='bx bx-code-block'></i></h1>
-          <p>I’m skilled in Data Structures & Algorithms and love to make the logics for the complicated problems. Loves
-            to debug the complex codes.</p>
+
+        <div class="skills-brain-wrap">
+          <img class="skills-image" src="images/digital brain (2).png" alt="skills brain">
+          <div class="slider" style="--width: 80px; --height: 80px; --quantity: 13;">
+            <div class="list">
+              <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+              <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+              <div class="item" style="--position: 3"><img src="images/3.png" alt=""></div>
+              <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>
+              <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+              <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+              <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+              <div class="item" style="--position: 8"><img src="images/8.jpg" alt=""></div>
+              <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+              <div class="item" style="--position: 10"><img src="images/10.png" alt=""></div>
+              <div class="item" style="--position: 11"><img src="images/11.png" alt=""></div>
+              <div class="item" style="--position: 12"><img src="images/12.png" alt=""></div>
+              <div class="item" style="--position: 13"><img src="images/13.png" alt=""></div>
+            </div>
+          </div>
         </div>
-        <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 13;">
-          <div class="list">
-             <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
-            <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
-            <div class="item" style="--position: 3"><img src="images/3.png" alt=""></div>
-             <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>
-            <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
-            <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
-            <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
-            <div class="item" style="--position: 8"><img src="images/8.jpg" alt=""></div>
-            <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
-            <div class="item" style="--position: 10"><img src="images/10.png" alt=""></div>
-            <div class="item" style="--position: 11"><img src="images/11.png" alt=""></div>
-            <div class="item" style="--position: 12"><img src="images/12.png" alt=""></div>
-            <div class="item" style="--position: 13"><img src="images/13.png" alt=""></div>
 
+        <div class="skill-column right">
+          <h2 class="gradient"><i class='bx bx-code-block'></i> Coder</h2>
+          <p>Skilled in DSA, Python, SQL, and ML. I love building logic for complex problems and turning raw data into insight.</p>
+        </div>
 
+      </div>
 
-
-
+      <!-- Skill tags -->
+      <div class="skill-tags-section" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-tag-group">
+          <span class="tag-label">Data</span>
+          <div class="tags">
+            <span>Advanced Excel</span><span>Pandas</span><span>NumPy</span><span>Seaborn</span><span>EDA</span>
+          </div>
+        </div>
+        <div class="skill-tag-group">
+          <span class="tag-label">Visualization</span>
+          <div class="tags">
+            <span>Power BI</span><span>DAX</span><span>Looker Studio</span><span>Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-tag-group">
+          <span class="tag-label">Dev</span>
+          <div class="tags">
+            <span>Python</span><span>SQL</span><span>React</span><span>JavaScript</span><span>FastAPI</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-tag-group">
+          <span class="tag-label">ML / Analytics</span>
+          <div class="tags">
+            <span>Machine Learning</span><span>Feature Engineering</span><span>NLP</span><span>A/B Testing</span><span>ETL</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ===== CONTACT ===== -->
     <section id="contact" class="contact-section">
-      <h1 class="section-title autoDisplay">CONTACT 📞</h1>
-      <div class="social-box autoBlur">
-        <a href="#"><i class='bx bxs-phone'></i> +91 8595545210</a>
-        <a href="mailto:ajitdiixt412@gmail.com"><i class='bx bxl-telegram'></i> ajitdiixt412@gmail.com</a>
-        <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank"><i class='bx bxl-linkedin-square'></i>
-          LinkedIn</a>
-        <div class="social-icons">
-          <a href="#"><i class='bx bxl-youtube'></i></a>
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+      <h1 class="section-title" data-aos="fade-up">Contact 📞</h1>
+      <div class="contact-wrapper">
+
+        <div class="social-box" data-aos="fade-right">
+          <p class="contact-intro">Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life — I'm here to help.</p>
+          <a href="tel:+918595545210"><i class='bx bxs-phone'></i> +91 85955 45210</a>
+          <a href="mailto:ajitdixit412@gmail.com"><i class='bx bxl-telegram'></i> ajitdixit412@gmail.com</a>
+          <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
+          <a href="https://github.com/imajitdixit" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
         </div>
-      </div>
-      <div class="contact-box autoBlur">
-        <form id="contact-form">
-          <p>Whether you're looking to build a new website, improve your existing platform, or bring a unique project to
-            life — I'm here to help.</p>
 
-          <p>Full Name</p>
-          <input name="name" placeholder="Your Full name" type="text" required>
+        <div class="contact-box" data-aos="fade-left">
+          <form id="contact-form">
+            <p>Full Name</p>
+            <input name="name" placeholder="Your Full Name" type="text" required>
+            <p>Email Address</p>
+            <input name="email" placeholder="Your Email" type="email" required>
+            <p>Your Message</p>
+            <textarea name="message" class="input-message" placeholder="Share your thoughts..." required></textarea>
+            <input type="hidden" name="title" value="Portfolio Contact Form">
+            <button type="submit">Send Message <i class='bx bx-mail-send'></i></button>
+          </form>
+        </div>
 
-          <p>Email Address</p>
-          <input name="email" placeholder="Your Email" type="email" required>
-
-          <p>Your Message</p>
-          <textarea name="message" class="input-message" placeholder="Share your thoughts..." required></textarea>
-          <input type="hidden" name="title" value="Portfolio Contact Form">
-
-          <button type="submit">Send Message <i class='bx bx-mail-send'></i></button>
-        </form>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <section class="footer">
-
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© 2026 Ajit Dixit. All rights reserved.</p>
       <div class="box-icons">
-        <p>
-          <a href="https://github.com/imajitdixit" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-github'></i>
-          </a>
-        </p>
-        <p>
-          <a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank" rel="noopener noreferrer">
-            <i class='bx bxl-linkedin-square'></i>
-          </a>
-        </p>
+        <p><a href="https://github.com/imajitdixit" target="_blank"><i class='bx bxl-github'></i></a></p>
+        <p><a href="https://linkedin.com/in/ajit-dixit-62b13324a" target="_blank"><i class='bx bxl-linkedin-square'></i></a></p>
       </div>
+    </footer>
 
-    </section>
-  </div>
+  </div><!-- .container -->
 
-  <script src="app.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
-
+  <script>AOS.init({ once: true, duration: 700, offset: 80 });</script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("OUtyhrknfzR7qNQcr"); // Replace with your EmailJS public key
-    })();
-  </script>
+  <script>(function(){ emailjs.init("OUtyhrknfzR7qNQcr"); })();</script>
   <script src="app.js"></script>
-
 </body>
-
 </html>
